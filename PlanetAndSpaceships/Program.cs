@@ -54,6 +54,27 @@ namespace PlanetAndSpaceships
                 Console.WriteLine(planets);
             }
 
+            
+            // Creates a new dictionary, and stores key/value pairs as strings
+            var spaceshipDictionary = new Dictionary<string, string>
+            {
+                {"Mercury", "Mariner"},
+                {"Venus", "Mariner 2"},
+                {"Mars", "Mariner 9"},
+                {"Jupiter", "Juno"},
+                {"Saturn", "Cassini"},
+                {"Uranus", "Voyager 2"},
+                {"Neptune", "Voyager 2"}
+            };
+
+            // Loops over the spaceshipDictionary
+            foreach (var item in spaceshipDictionary)
+            {
+                Console.WriteLine($"The planet {item.Key} has been visited by the spaceship/probe {item.Value}");
+            }
+
+
+
 
             Console.ReadLine();
 
